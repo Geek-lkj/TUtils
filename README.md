@@ -24,8 +24,8 @@
  *  获取手机通信录成员列表 	getContactsList()
  *  
  *  获取手机通讯录成员头像	getContactsBitMap()
-##
-### SharedPreference_Utils（简化 SharedPreference 操作）
+
+ 
 ##
 ### VUtils
  * dp转为px					dp2px(int)
@@ -41,7 +41,15 @@
  * 根据资源ID获取字符串		getStringRes(int)
  * 
  * 根据资源ID获取字符串数组	getStringArrRes(int)
+ 
+ 
 ##
 ###L (简化Log调试)
 
+##  SharedPreference_Utils（简化 SharedPreference 操作)
+
+##
+###Adapter
+ * ListView Adapter 简化书写
+ * ViewPager Adapter 简化书写
 
