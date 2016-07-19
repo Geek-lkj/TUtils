@@ -20,7 +20,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.widget.Toast;
-
 /**
  * Other工具类 使用前调用本类的init方法初始化
  * 
@@ -52,17 +51,15 @@ import android.widget.Toast;
 public final class OUtils {
 
 	private static Context context;
-	
+
 	private static final String AUTHORITY = "com.android.contacts";
-	
+
 	private static final Uri RAW_CONTACT_URI = Uri.parse("content://"
 			+ AUTHORITY + "/raw_contacts");
-	
+
 	private static final Uri DATA_URI = Uri.parse("content://" + AUTHORITY
 			+ "/data");
-	
-	
-	
+
 	private OUtils() {
 	}
 
@@ -95,8 +92,6 @@ public final class OUtils {
 	}
 
 	// //////////////////////////////////////
-
-	
 
 	/**
 	 * ZIP压缩
@@ -337,9 +332,8 @@ public final class OUtils {
 
 		return null;
 	}
-	
-	
-	/////////////////////////////
+
+	// ///////////////////////////
 	/******************
 	 * 获取通信录List
 	 * 
@@ -415,10 +409,12 @@ public final class OUtils {
 		return null;
 
 	}
+
 	/**
 	 * 通讯录javaBean
+	 * 
 	 * @author Administrator
-	 *
+	 * 
 	 */
 	public static class ContactBean {
 		public int id;

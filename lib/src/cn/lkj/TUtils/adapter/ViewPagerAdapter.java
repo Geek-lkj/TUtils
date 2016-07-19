@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 /**
  * ViewPagerÊÊÅäÆ÷
  * 
- * @author Administrator
+ * @author LKJ
  * 
  */
 public class ViewPagerAdapter extends PagerAdapter {

@@ -5,7 +5,7 @@ import android.util.Log;
 /**
  * Log工具类
  * 
- * @author Administrator
+ * @author LKJ
  * 
  */
 public final class L {
@@ -47,7 +47,7 @@ public final class L {
 			Log.d("Log", text + "");
 		}
 	}
-	
+
 	/**
 	 * 打印Log
 	 * 
@@ -58,8 +58,7 @@ public final class L {
 			Log.d("Log", text + "");
 		}
 	}
-	
-	
+
 	/**
 	 * 打印Log
 	 * 

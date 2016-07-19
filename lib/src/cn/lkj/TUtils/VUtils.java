@@ -31,20 +31,18 @@ import android.view.View;
  * 
  */
 public final class VUtils {
-	
+
 	private static Context mContext;
-	
-	private VUtils(){}
-	
-	
-	public static void init(Context context){
-		if(mContext == null){
+
+	private VUtils() {
+	}
+
+	public static void init(Context context) {
+		if (mContext == null) {
 			mContext = context;
 		}
 	}
-	
-	
-	
+
 	/**
 	 * dp转px
 	 * 
@@ -58,8 +56,7 @@ public final class VUtils {
 		float densityDpi = displayMetrics.densityDpi;
 		return (int) (density * dp + 0.5);
 	}
-	
-	
+
 	/**
 	 * px转dp
 	 * 
@@ -73,50 +70,53 @@ public final class VUtils {
 		float densityDpi = displayMetrics.densityDpi;
 		return (int) (density / px + 0.5);
 	}
-	
+
 	/**
 	 * 根据layout返回View
+	 * 
 	 * @param XML资源文件ID
 	 * @return View
 	 */
-	public static View inflate(int xmlResId){
+	public static View inflate(int xmlResId) {
 		return View.inflate(mContext, xmlResId, null);
 	}
 
 	/**
 	 * 获取LayoutInflater
+	 * 
 	 * @return
 	 */
-	public static LayoutInflater getLayoutInflater(){
+	public static LayoutInflater getLayoutInflater() {
 		return LayoutInflater.from(mContext);
 	}
-	
+
 	/**
 	 * 获取资源对象
+	 * 
 	 * @return
 	 */
-	public static Resources getResources(){
+	public static Resources getResources() {
 		return mContext.getResources();
 	}
-	
+
 	/**
 	 * 获取资源字符串
+	 * 
 	 * @param resId
 	 * @return
 	 */
-	public static String getStringRes(int resId){
+	public static String getStringRes(int resId) {
 		return getResources().getString(resId);
 	}
 
 	/**
 	 * 获取资源字符串数组
+	 * 
 	 * @param resId
 	 * @return
 	 */
-	public static String[] getStringArrRes(int resId){
+	public static String[] getStringArrRes(int resId) {
 		return getResources().getStringArray(resId);
 	}
-	
-	
-	
+
 }
