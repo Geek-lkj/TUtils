@@ -5,6 +5,9 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.lidroid.xutils.BitmapUtils;
 
 /**
  * UI View 相关工具类
@@ -28,11 +31,12 @@ import android.view.View;
  * 
  * 根据资源ID获取字符串数组	getStringArrRes(int)
  * 
- * 
+ * 加载网络图片注入ImageView httpGetBitMap
  */
 public final class VUtils {
 
 	private static Context mContext;
+	private static BitmapUtils btu;
 
 	private VUtils() {
 	}
@@ -117,6 +121,18 @@ public final class VUtils {
 	 */
 	public static String[] getStringArrRes(int resId) {
 		return getResources().getStringArray(resId);
+	}
+	
+	/**
+	 * 加载网络图片注入ImageView
+	 * @param iv
+	 * @param url
+	 */
+	public static void httpGetBitMap(ImageView iv,String url){
+		if(btu == null){
+			btu = new BitmapUtils(mContext);
+		}
+		btu.display(iv, url);
 	}
 
 }

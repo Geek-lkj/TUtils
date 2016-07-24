@@ -41,12 +41,16 @@
  * 根据资源ID获取字符串		getStringRes(int)
  * 
  * 根据资源ID获取字符串数组	getStringArrRes(int)
+ * 
+ *  加载网络图片注入ImageView httpGetBitMap(ImageView,String)
  
  
 ##
 ###L (简化Log调试)
 
-##  SharedPreference_Utils（简化 SharedPreference 操作)
+###  SharedPreference_Utils（简化 SharedPreference 操作)
+
+###  DUtils（全局Map存放数据)
 
 ##
 ###Adapter
